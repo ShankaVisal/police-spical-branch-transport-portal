@@ -17,7 +17,12 @@ const userSchema = mongoose.Schema({
      lastName : {
           type : String,
           required: true
-     }
+     },
+     type : {
+          type : String,
+          required: true,
+          default : "user"
+     },
      
 })
 

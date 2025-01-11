@@ -5,10 +5,13 @@ import mongoose from "mongoose";
 import jwt, { decode } from "jsonwebtoken";
 import dotenv from "dotenv";
 import vehicleRouter from "./routes/vehicleRoute.js";
+import cors from 'cors'
 
 dotenv.config()
 
 const app = express()
+
+app.use(cors());
 
 app.use(bodyParser.json())
 
